@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <h2>Course Feedback</h2>
+
+    <!-- The mailto: protocol allows us to directly send the form data to an email -->
+    <form action="mailto:dbaik@pace.edu" method="post" enctype="text/plain">
+        Title:<br>
+        <input type="text" name="title" required><br><br>
+
+        Feedback Body:<br>
+        <textarea name="body" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Submit button to send the email -->
+        <input type="submit" value="Submit">
+        
+        <!-- Reset button to clear the form -->
+        <input type="reset" value="Clear">
+    </form>
+</body>
+
+</html>
